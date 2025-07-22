@@ -1,23 +1,18 @@
 # 🧠 Caderno de Estudos - Libft | 42SP
 
-> Este repositório é uma versão adaptada em Markdown de um caderno originalmente feito no Notion.
+> Este repositório é uma versão adaptada em Markdown de um caderno originalmente feito no Notion, segue o link:
 
-Aqui você encontrará anotações organizadas pedagogicamente sobre a implementação das funções da `libft`, projeto base da 42. As funções estão agrupadas por similaridade de propósito, complexidade e utilidade, com base no meu próprio entendimento.
----
+-----------------------  https://www.notion.so/LIB_FT-C-2371a6c6214c806197e7ef29f15d7540?source=copy_link  -----------------------
 
 ## ✍️ Sobre o Caderno
 
-Este caderno foi construído com o objetivo de:
-
-Basicamente é o meu caderno digital, logo, todos os meus processos de entendimento, fontes, processos próprios, minhas dúvidas, meus desenvolvimento ao longo do projeto... Enfim, serve para os mesmos propósitos que um usual "caderno de escola"
+Basicamente é o meu caderno digital, logo, todos os meus entendimentos, fontes, processos próprios, dúvidas, desenvolvimento ao longo do projeto... Enfim, serve para os mesmos propósitos que um usual "caderno de escola"
 serviria.
 
-- Eu gosto de organizar e deixar as coisas visualmente bonitas.
-- Me ajuda com organização e otimização do projeto.
+- Ajuda a organizar e deixar as coisas visualmente bonitas e úteis.
+- Otimiza o desenvolver do projeto.
 - Time manegement.
-- Servir como material de apoio durante/após a implementação da libft.
-
-A estrutura pedagógica foi pensada para começar com funções mais simples e evoluir para funções com maior grau de complexidade ou utilidade prática.
+- Serve como material de apoio durante/após a implementação da libft.
 
 ---
 
