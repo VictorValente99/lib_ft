@@ -6,7 +6,7 @@
 /*   By: victde-s <victde-s@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/22 18:01:59 by victde-s          #+#    #+#             */
-/*   Updated: 2025/07/23 21:17:40 by victde-s         ###   ########.fr       */
+/*   Updated: 2025/08/04 15:37:49 by victde-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,8 +32,8 @@ int	ft_isalnum(int c)
 // int	main(void)
 // {
 // 	printf("\n");
-// 	printf("A função isalnum, verifica se é letra ou número\n");
-// 	printf("e retorna 0 se for falso, ou qualquer número != '0' se for verdadeiro.\n\n");
+// 	printf("Isalnum, verify if int or char\n");
+// 	printf("0 if false, != '0' if ==.\n\n");
 // 	printf("-------- Original: %d\n", isalnum(1));
 // 	printf("------------ Mine: %d\n", ft_isalnum(1));
 // 	printf("-------- Original: %d\n", isalnum('a'));
