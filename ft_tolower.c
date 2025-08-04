@@ -6,7 +6,7 @@
 /*   By: victde-s <victde-s@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/22 18:03:49 by victde-s          #+#    #+#             */
-/*   Updated: 2025/07/23 21:43:50 by victde-s         ###   ########.fr       */
+/*   Updated: 2025/08/04 15:54:09 by victde-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,8 +25,8 @@ int	ft_tolower(int c)
 // int	main(void)
 // {
 // 	printf("\n");
-// 	printf("A função tolower, transforma caracteres maiuscúlos em minúsculos\n");
-// 	printf("ou retorna o próprio char em ascii.\n\n");
+// 	printf("Tolower, turn char A at a\n");
+// 	printf("or return == char in ascii.\n\n");
 // 	printf("-------- Original: %d 'A'\n", tolower('A'));
 // 	printf("------------ Mine: %d 'Z'\n", ft_tolower('A'));
 // 	printf("-------- Original: %d 'b'\n", tolower('b'));
