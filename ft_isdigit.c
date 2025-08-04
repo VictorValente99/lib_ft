@@ -6,7 +6,7 @@
 /*   By: victde-s <victde-s@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/22 18:00:43 by victde-s          #+#    #+#             */
-/*   Updated: 2025/07/23 21:17:28 by victde-s         ###   ########.fr       */
+/*   Updated: 2025/08/04 15:42:42 by victde-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,8 +28,8 @@ int	ft_isdigit(int c)
 // int	main(void)
 // {
 // 	printf("\n");
-// 	printf("A função isdigit, verifica se é um número e retorna 0 se for falso,\n");
-// 	printf("ou qualquer número != '0' se for verdadeiro.\n\n");
+// 	printf("Isdigit, verify if == int return '0' if false,\n");
+// 	printf("or != '0' if ==\n\n");
 // 	printf("-------- Original: %d\n", isdigit('1'));
 // 	printf("------------ Mine: %d\n", ft_isdigit('1'));
 // 	printf("-------- Original: %d\n", isdigit('a'));
