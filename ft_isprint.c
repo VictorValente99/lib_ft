@@ -6,7 +6,7 @@
 /*   By: victde-s <victde-s@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/22 18:03:19 by victde-s          #+#    #+#             */
-/*   Updated: 2025/07/23 21:46:12 by victde-s         ###   ########.fr       */
+/*   Updated: 2025/08/04 15:44:01 by victde-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,8 +25,8 @@ int	ft_isprint(int c)
 // int	main(void)
 // {
 // 	printf("\n");
-// 	printf("A função isprint, verifica se é alguma coisa printável\n");
-// 	printf("retorna 0 para falso ou != 0 para verdadeiro.\n\n");
+// 	printf("Isprint, verify if >printable< \n");
+// 	printf("return '0' if false or != '0' if == \n\n");
 // 	printf("-------- Original: %d\n", isprint(7));
 // 	printf("------------ Mine: %d\n", ft_isprint(7));
 // 	printf("-------- Original: %d\n", isprint('a'));
