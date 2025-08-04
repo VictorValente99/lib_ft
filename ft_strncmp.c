@@ -6,7 +6,7 @@
 /*   By: victde-s <victde-s@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/22 18:04:55 by victde-s          #+#    #+#             */
-/*   Updated: 2025/07/23 22:39:49 by victde-s         ###   ########.fr       */
+/*   Updated: 2025/08/04 15:52:00 by victde-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,11 +31,11 @@ int	ft_strncmp(char *str1, char *str2, int n)
 
 // int	main(void)
 // {
-// 	printf("A fução strncmp compara duas strings somente até 'n' caracteres\n");
-// 	printf("e retorna um valor x\n\n");
-// 	printf("if x == 0 as str tem o mesmo tamanho\n");
-// 	printf("if x < 0 str2 é maior que str1\n");
-// 	printf("if x > 0 str1 é maior que str2\n\n");
+// 	printf("Strncmp compare two str until 'n' char's\n");
+// 	printf("returns int 'x'\n\n");
+// 	printf("if x == 0 str has the same 'n'\n");
+// 	printf("if x < 0 str2 < str1\n");
+// 	printf("if x > 0 str1 > str2\n\n");
 // 	printf("-------- Original: %d\n", strncmp("123", "123", 3));
 // 	printf("------------ Mine: %d\n\n", ft_strncmp("123", "123", 3));
 // 	printf("-------- Original: %d\n", strncmp("123", "124", 3));
