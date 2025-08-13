@@ -138,11 +138,7 @@ int	ft_calloc()
 	return (0);
 }
 
-int	ft_bzero()
-{
-
-	return (0);
-}
+void	ft_bzero(void *s, unsigned int n);
 
 int	ft_atoi()
 {
