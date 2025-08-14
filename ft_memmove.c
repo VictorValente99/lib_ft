@@ -1,37 +1,40 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: victde-s <victde-s@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/07/22 18:04:25 by victde-s          #+#    #+#             */
-/*   Updated: 2025/08/14 13:30:21 by victde-s         ###   ########.fr       */
+/*   Created: 2025/08/13 22:31:25 by victde-s          #+#    #+#             */
+/*   Updated: 2025/08/14 13:30:04 by victde-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_strlen(char *c)
+void *ft_memmove(void *dest, const void *src, size_t n)
 {
-	int	i;
+    unsigned char *ptr;
+    unsigned char *ptr1;
 
-	i = 0;
-	while (c[i] != '\0')
-	{
-		i++;
-	}
-	return (i);
+    ptr = (unsigned char *)dest;
+    ptr1 = (unsigned char *)src;
+
+    if(dest > src)
+    {
+        while (n--)
+        {
+            ptr[n] = ptr1[n];
+        }
+    }
+    else
+    {
+        while (n--)
+        {
+            *ptr = *ptr1;
+            ptr++;
+            ptr1++;
+        }   
+    }
+    return (dest);
 }
-
-// #include <stdio.h>
-// #include <string.h>
-
-// int	main(void)
-// {
-// 	printf("Strlen, pass by a str, and return\n");
-// 	printf("the N char's on str.\n\n");
-// 	printf("-------- Original: %zu\n", strlen("123"));
-// 	printf("------------ Mine: %d\n\n", ft_strlen("123"));
-// 	return (0);
-// }
