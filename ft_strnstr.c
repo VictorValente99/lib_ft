@@ -1,34 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: victde-s <victde-s@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/07/22 18:04:25 by victde-s          #+#    #+#             */
-/*   Updated: 2025/08/18 17:58:13 by victde-s         ###   ########.fr       */
+/*   Created: 2025/08/25 18:03:28 by victde-s          #+#    #+#             */
+/*   Updated: 2025/08/26 11:39:49 by victde-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlen(const char *c)
+char *ft_strnstr(const char *haystack, const char *needle, size_t len)
 {
-	size_t	i;
+    size_t i;
+    size_t j;
 
-	i = 0;
-	while (c[i] != '\0')
-	{
-		i++;
-	}
-	return (i);
+    i = 0;
+    j = 0;
+
+    if (*needle == '\0')
+        return (char *)haystack;
+    while (i < len && haystack[i])
+    {
+        while (i + j < len && needle[j] && haystack[i + j] == needle[j])
+            j++;
+        if (needle[j] == '\0')
+            return (char *)&haystack[i];
+        i++;
+    }
+    return (NULL);
 }
-
-/* int	main(void)
-{
-	printf("Strlen, pass by a str, and return\n");
-	printf("sizeof '*c'.\n\n");
-	printf("-------- Original: %zu\n", strlen("123"));
-	printf("------------ Mine: %zu\n", ft_strlen("123"));
-	return (0);
-} */

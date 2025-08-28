@@ -1,4 +1,7 @@
 {
     "editor.formatOnSave": true,
-    "editor.defaultFormatter": "MariusvanWijk-JoppeKoers.codam-norminette-3"
+    "editor.defaultFormatter": "MariusvanWijk-JoppeKoers.codam-norminette-3",
+    "files.associations": {
+        "libft.h": "c"
+    }
 }

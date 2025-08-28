@@ -6,7 +6,7 @@
 /*   By: victde-s <victde-s@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/21 16:39:08 by victde-s          #+#    #+#             */
-/*   Updated: 2025/08/14 13:21:22 by victde-s         ###   ########.fr       */
+/*   Updated: 2025/08/18 18:02:55 by victde-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,8 @@
 
 # include <unistd.h>
 # include <stdlib.h>
+# include <string.h>
+
 
 //SEÇÃO DE CHAR!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
@@ -27,162 +29,62 @@ int	ft_tolower(int c);
 
 //SEÇÃO DE STRINGS!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-int	ft_strlen(char *c);
+size_t	ft_strlen(const char *c);
 
-int	ft_strchr()
-{
+/* int	ft_strchr();
 
-	return (0);
-}
+int	ft_strrchr(); */
 
-int	ft_strrchr()
-{
+int	ft_strncmp(const char *str1, const char *str2, size_t n);
 
-	return (0);
-}
+/* int	ft_strlcpy();
 
-int	ft_strncmp(char *str1, char *str2, int n);
+int	ft_strlcat();
 
-int	ft_strlcpy()
-{
+int	ft_strdup();
 
-	return (0);
-}
+int	ft_strnstr();
 
-int	ft_strlcat()
-{
+int	ft_strjoin();
 
-	return (0);
-}
+int	ft_strtrim();
 
-int	ft_strdup()
-{
+int	ft_split();
 
-	return (0);
-}
+int	ft_substr();
 
-int	ft_strnstr()
-{
+int	ft_strmapi();
 
-	return (0);
-}
-
-int	ft_strjoin()
-{
-
-	return (0);
-}
-
-int	ft_strtrim()
-{
-
-	return (0);
-}
-
-int	ft_split()
-{
-
-	return (0);
-}
-
-int	ft_substr()
-{
-
-	return (0);
-}
-
-int	ft_strmapi()
-{
-
-	return (0);
-}
-
-int	ft_striteri()
-{
-
-	return (0);
-}
+int	ft_striteri(); */
 
 //SEÇÃO DE MEMÓRIA!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-int	ft_memset()
-{
+void	*ft_memset(void *s, int c, size_t n);
 
-	return (0);
-}
+/* int	ft_memcpy(); */
 
-int	ft_memcpy()
-{
+void	*ft_memmove(void *dest, const void *src, size_t n);
+/* 
+int	ft_memchr();
 
-	return (0);
-}
+int	ft_memcmp();
 
-int	ft_memmove()
-{
+int	ft_calloc();
 
-	return (0);
-}
+int	ft_bzero(void *s, size_t n);
 
-int	ft_memchr()
-{
+int	ft_atoi();
 
-	return (0);
-}
-
-int	ft_memcmp()
-{
-
-	return (0);
-}
-
-int	ft_calloc()
-{
-
-	return (0);
-}
-
-int	ft_bzero()
-{
-
-	return (0);
-}
-
-int	ft_atoi()
-{
-
-	return (0);
-}
-
-int	ft_itoa()
-{
-
-	return (0);
-}
+int	ft_itoa(); */
 
 //SEÇÃO DE SAÍDA!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-int	ft_putchar_fd()
-{
+/* int	ft_putchar_fd();
 
-	return (0);
-}
+int	ft_putstr_fd();
 
-int	ft_putstr_fd()
-{
+int	ft_putendl_fd();
 
-	return (0);
-}
-
-int	ft_putendl_fd()
-{
-
-	return (0);
-}
-
-int	ft_putnbr_fd()
-{
-
-	return (0);
-}
-
+int	ft_putnbr_fd();
+ */
 #endif

@@ -1,34 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: victde-s <victde-s@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/07/22 18:04:25 by victde-s          #+#    #+#             */
-/*   Updated: 2025/08/18 17:58:13 by victde-s         ###   ########.fr       */
+/*   Created: 2025/08/27 01:03:57 by victde-s          #+#    #+#             */
+/*   Updated: 2025/08/27 13:45:09 by victde-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlen(const char *c)
+char *ft_strdup(const char *s)
 {
-	size_t	i;
-
-	i = 0;
-	while (c[i] != '\0')
-	{
-		i++;
-	}
-	return (i);
+    char  *ptr;
+    size_t  len;
+    
+    if (!s)
+        return (NULL);
+    len = ft_strlen(s) + 1;
+    ptr = malloc(len);
+    if (ptr == NULL)
+        return (NULL);
+    
+    ft_memcpy(ptr, s, len);
+    return (ptr);
 }
-
-/* int	main(void)
-{
-	printf("Strlen, pass by a str, and return\n");
-	printf("sizeof '*c'.\n\n");
-	printf("-------- Original: %zu\n", strlen("123"));
-	printf("------------ Mine: %zu\n", ft_strlen("123"));
-	return (0);
-} */

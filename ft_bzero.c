@@ -6,7 +6,7 @@
 /*   By: victde-s <victde-s@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/14 13:00:22 by victde-s          #+#    #+#             */
-/*   Updated: 2025/08/14 13:26:27 by victde-s         ###   ########.fr       */
+/*   Updated: 2025/08/18 17:56:33 by victde-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,6 +38,8 @@ int main(void)
     bzero(str, 3);
     ft_bzero(str1, 3);
     printf("after bzero: %s\n", str);
+    printf("after bzero: %s\n", str + 3);
     printf("after ft_bzero: %s\n", str1);
+    printf("after ft_bzero: %s\n", str1 + 3);
     return (0);
 }  */
