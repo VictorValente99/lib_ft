@@ -6,7 +6,7 @@
 /*   By: victde-s <victde-s@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/22 18:04:25 by victde-s          #+#    #+#             */
-/*   Updated: 2025/08/18 17:58:13 by victde-s         ###   ########.fr       */
+/*   Updated: 2025/08/29 01:07:54 by victde-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,12 +23,3 @@ size_t	ft_strlen(const char *c)
 	}
 	return (i);
 }
-
-/* int	main(void)
-{
-	printf("Strlen, pass by a str, and return\n");
-	printf("sizeof '*c'.\n\n");
-	printf("-------- Original: %zu\n", strlen("123"));
-	printf("------------ Mine: %zu\n", ft_strlen("123"));
-	return (0);
-} */

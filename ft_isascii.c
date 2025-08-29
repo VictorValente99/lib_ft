@@ -6,7 +6,7 @@
 /*   By: victde-s <victde-s@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/22 18:02:47 by victde-s          #+#    #+#             */
-/*   Updated: 2025/08/14 13:29:28 by victde-s         ###   ########.fr       */
+/*   Updated: 2025/08/29 01:06:36 by victde-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,21 +20,3 @@ int	ft_isascii(int c)
 	}
 	return (0);
 }
-
-// #include <stdio.h>
-// #include <ctype.h>
-
-// int	main(void)
-// {
-// 	printf("\n");
-// 	printf("Isascii, verify if > ascii < \n");
-// 	printf("'0' if false, or != '0' if ==\n\n");
-// 	printf("-------- Original: %d\n", isascii(1));
-// 	printf("------------ Mine: %d\n", ft_isascii(1));
-// 	printf("-------- Original: %d\n", isascii('a'));
-// 	printf("------------ Mine: %d\n", ft_isascii('a'));
-// 	printf("-------- Original: %d\n", isascii(128));
-// 	printf("------------ Mine: %d\n", ft_isascii(128));
-// 	printf("\n");
-// 	return (0);
-// }
