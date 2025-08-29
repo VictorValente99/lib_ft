@@ -6,22 +6,22 @@
 /*   By: victde-s <victde-s@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/14 13:00:22 by victde-s          #+#    #+#             */
-/*   Updated: 2025/08/18 17:56:33 by victde-s         ###   ########.fr       */
+/*   Updated: 2025/08/29 00:30:33 by victde-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void    ft_bzero(void *s, size_t n)
+void	ft_bzero(void *s, size_t n)
 {
-    unsigned char *ptr;
+	unsigned char	*ptr;
 
-    ptr = (unsigned char *)s;
-    while (n--)
-    {
-        *ptr = '\0';
-        ptr++;
-    }
+	ptr = (unsigned char *)s;
+	while (n--)
+	{
+	*ptr = '\0';
+	ptr++;
+	}
 }
 
 /* #include <stdio.h> 
@@ -29,17 +29,17 @@ void    ft_bzero(void *s, size_t n)
 
 int main(void)
 {
-    char str[] = "abcde";
-    char str1[] = "abcde";
+	char str[] = "abcde";
+	char str1[] = "abcde";
 
-    printf("bzero erases the memory at n bytes\n\n");
-    printf("before bzero: %s\n", str);
-    printf("before ft_bzero: %s\n", str1);
-    bzero(str, 3);
-    ft_bzero(str1, 3);
-    printf("after bzero: %s\n", str);
-    printf("after bzero: %s\n", str + 3);
-    printf("after ft_bzero: %s\n", str1);
-    printf("after ft_bzero: %s\n", str1 + 3);
-    return (0);
+	printf("bzero erases the memory at n bytes\n\n");
+	printf("before bzero: %s\n", str);
+	printf("before ft_bzero: %s\n", str1);
+	bzero(str, 3);
+	ft_bzero(str1, 3);
+	printf("after bzero: %s\n", str);
+	printf("after bzero: %s\n", str + 3);
+	printf("after ft_bzero: %s\n", str1);
+	printf("after ft_bzero: %s\n", str1 + 3);
+	return (0);
 }  */
