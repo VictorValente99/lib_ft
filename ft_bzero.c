@@ -6,7 +6,7 @@
 /*   By: victde-s <victde-s@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/14 13:00:22 by victde-s          #+#    #+#             */
-/*   Updated: 2025/08/29 01:06:08 by victde-s         ###   ########.fr       */
+/*   Updated: 2025/08/29 13:20:55 by victde-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ void	ft_bzero(void *s, size_t n)
 	ptr = (unsigned char *)s;
 	while (n--)
 	{
-	*ptr = '\0';
-	ptr++;
+		*ptr = '\0';
+		ptr++;
 	}
 }

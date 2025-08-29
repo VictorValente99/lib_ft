@@ -6,7 +6,7 @@
 /*   By: victde-s <victde-s@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/26 20:24:19 by victde-s          #+#    #+#             */
-/*   Updated: 2025/08/29 00:29:56 by victde-s         ###   ########.fr       */
+/*   Updated: 2025/08/29 13:58:12 by victde-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ int	sign_checkage(const char **nptr)
 	return (sign);
 }
 
-int	atoi(const char *nptr)
+int	ft_atoi(const char *nptr)
 {
 	unsigned int	n;
 	int				sign;

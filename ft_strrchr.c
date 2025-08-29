@@ -6,7 +6,7 @@
 /*   By: victde-s <victde-s@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/21 16:45:19 by victde-s          #+#    #+#             */
-/*   Updated: 2025/08/29 01:08:15 by victde-s         ###   ########.fr       */
+/*   Updated: 2025/08/29 14:48:04 by victde-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,18 +14,12 @@
 
 char	*ft_strrchr(const char *s, int c)
 {
-	size_t			i;
-	unsigned char	convert;
+	int	i;
 
 	i = ft_strlen(s);
-	convert = (unsigned char)c;
-	while (i > 0)
-	{
+	while (i >= 0 && s[i] != (char)c)
 		i--;
-		if (s[i] == convert)
-			return ((char *)&s[i]);
-	}
-	if (convert == '\0')
-		return ((char *)&s[i]);
-	return (NULL);
+	if (i < 0)
+		return (NULL);
+	return ((char *)&s[i]);
 }

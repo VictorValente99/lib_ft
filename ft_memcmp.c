@@ -6,7 +6,7 @@
 /*   By: victde-s <victde-s@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/22 16:47:20 by victde-s          #+#    #+#             */
-/*   Updated: 2025/08/29 01:07:08 by victde-s         ###   ########.fr       */
+/*   Updated: 2025/08/29 13:20:46 by victde-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,8 +23,8 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	{
 		if (*ptr != *ptr1)
 			return (*ptr - *ptr1);
-	ptr++;
-	ptr1++;
+		ptr++;
+		ptr1++;
 	}
 	return (0);
 }
