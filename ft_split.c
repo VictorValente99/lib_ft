@@ -6,17 +6,17 @@
 /*   By: victde-s <victde-s@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/28 18:02:52 by victde-s          #+#    #+#             */
-/*   Updated: 2025/08/31 17:45:02 by victde-s         ###   ########.fr       */
+/*   Updated: 2025/08/31 18:43:39 by victde-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int counting_words(const char *str, char stop)
+int	counting_words(const char *str, char stop)
 {
-	int	word_counter;
+	int		word_counter;
 	size_t	is_a_word;
-	
+
 	word_counter = 0;
 	is_a_word = 0;
 	while (*str)
@@ -27,51 +27,72 @@ int counting_words(const char *str, char stop)
 			word_counter++;
 		}
 		else if (*str == stop)
-		is_a_word = 0;
+			is_a_word = 0;
 		str++;
 	}
 	return (word_counter);
 }
-char **malloc_n_words(int n_words)
+
+char	**malloc_n_words(int n_words)
 {
-	char **mallocked_words;
-	
-	mallocked_words = ft_calloc(n_words + 1 ,sizeof(char *));
+	char	**mallocked_words;
+
+	mallocked_words = ft_calloc(n_words + 1, sizeof(char *));
 	if (!mallocked_words)
 		return (NULL);
 	return (mallocked_words);
 }
-size_t get_word_length(char *s, char stop)
+
+void	free_words(char **words, int filled)
 {
-	size_t len;
-	
-	len = 0;
-	while (s[len] && s[len] != stop)
+	int	i;
+
+	i = 0;
+	while (i < filled)
 	{
-		len++;
+		free(words[i]);
+		i++;
 	}
-	return(len);
-}
-char *next_word(char *s, char c)
-{
-	while (*s && *s == c)
-		s++;
-	return(s);
+	free(words);
 }
 
-char **ft_split(char const *s, char c)
+char	**put_words(char **splitted, const char *s, char c, int n_words)
+{
+	int	i;
+	int	j;
+	int	start;
+
+	i = 0;
+	j = 0;
+	while (i < n_words)
+	{
+		while (s[j] && s[j] == c)
+			j++;
+		start = j;
+		while (s[j] && s[j] != c)
+			j++;
+		splitted[i] = ft_substr(s, start, j - start);
+		if (!splitted[i])
+		{
+			free_words(splitted, i);
+			return (NULL);
+		}
+		i++;
+	}
+	splitted[i] = NULL;
+	return (splitted);
+}
+
+char	**ft_split(char const *s, char c)
 {
 	char	**words_vector;
 	int		n_words;
-	char	*s_ptr;
-	size_t i;
-	size_t	word_size;
 
 	if (!s)
 		return (NULL);
-
-	i = 0;
 	n_words = counting_words(s, c);
-	s_ptr = (char *)s;
 	words_vector = malloc_n_words(n_words);
+	if (!words_vector)
+		return (NULL);
+	return (put_words(words_vector, s, c, n_words));
 }
