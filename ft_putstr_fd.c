@@ -6,15 +6,15 @@
 /*   By: victde-s <victde-s@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/29 14:56:57 by victde-s          #+#    #+#             */
-/*   Updated: 2025/08/29 15:00:43 by victde-s         ###   ########.fr       */
+/*   Updated: 2025/08/31 17:51:20 by victde-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void    ft_putstr_fd(char *s, int fd)
+void	ft_putstr_fd(char *s, int fd)
 {
-    if (!s)
-        return ;
-    write(fd, s, ft_strlen(s));   
+	if (!s)
+		return ;
+	write(fd, s, ft_strlen(s));
 }
