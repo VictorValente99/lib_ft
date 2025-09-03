@@ -6,7 +6,7 @@
 /*   By: victde-s <victde-s@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/27 01:03:57 by victde-s          #+#    #+#             */
-/*   Updated: 2025/08/29 00:46:52 by victde-s         ###   ########.fr       */
+/*   Updated: 2025/09/03 18:09:51 by victde-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,15 +14,13 @@
 
 char	*ft_strdup(const char *s)
 {
-	char	*ptr;
+	char	*str;
 	size_t	len;
 
-	if (!s)
-		return (NULL);
 	len = ft_strlen(s) + 1;
-	ptr = malloc(len);
-	if (ptr == NULL)
+	str = (char *)ft_calloc(len, sizeof(char));
+	if (!str)
 		return (NULL);
-	ft_memcpy(ptr, s, len);
-	return (ptr);
+	ft_memcpy(str, s, len);
+	return (str);
 }

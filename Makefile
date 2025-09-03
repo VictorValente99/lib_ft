@@ -44,9 +44,6 @@ AR = ar rcs
 
 CFLAGS = -Wall -Wextra -Werror -g
 
-cc:
-	@$(CC) $(CFLAGS) $(f) -o $(f:.c=)
-
 $(NAME): $(OBJS)
 	$(AR) $@ $^
 
@@ -60,4 +57,4 @@ fclean: clean
 
 re: fclean all
 
-.PHONY: All clean fclean re cc execute
+.PHONY: all clean fclean re
