@@ -6,7 +6,7 @@
 /*   By: victde-s <victde-s@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/27 19:15:42 by victde-s          #+#    #+#             */
-/*   Updated: 2025/08/29 00:47:56 by victde-s         ###   ########.fr       */
+/*   Updated: 2025/09/04 16:47:46 by victde-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,11 +24,10 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	s1_len = ft_strlen(s1);
 	s2_len = ft_strlen(s2);
 	nstr_size = (s1_len + s2_len) + 1;
-	new_str = ft_calloc(nstr_size, sizeof(char));
+	new_str = (char *)ft_calloc(nstr_size, sizeof(char));
 	if (!new_str)
 		return (NULL);
-	ft_memcpy(new_str, s1, s1_len);
-	ft_memcpy(new_str + s1_len, s2, s2_len);
-	new_str[s1_len + s2_len] = '\0';
+	ft_strlcpy(new_str, s1, s1_len + 1);
+	ft_strlcat(&new_str[s1_len], s2, s2_len + 1);
 	return (new_str);
 }
